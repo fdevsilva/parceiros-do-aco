@@ -23,6 +23,10 @@ Abra [http://localhost:3000](http://localhost:3000).
 
 Build de produção: `npm run build`. Lint: `npm run lint`. Checagem de tipos: `npx tsc --noEmit`.
 
+### Exportação estática (uso interno da Hexatenant)
+
+Por padrão o projeto roda normalmente, na raiz, como qualquer app Next.js. O `next.config.js` tem um modo opcional, ligado só pela variável de ambiente `BUILD_TARGET=hexatenant`, que gera uma exportação estática com prefixo `/parceiros-do-aco` para ser embutida dentro de outro site. Não é necessário para rodar ou contribuir com este projeto.
+
 ## Estrutura de pastas
 
 ```
