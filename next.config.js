@@ -8,6 +8,7 @@
 //   BUILD_TARGET=hexatenant npm run build
 //
 const paraHexatenant = process.env.BUILD_TARGET === "hexatenant";
+const basePath = paraHexatenant ? "/parceiros-do-aco" : "";
 
 const nextConfig = {
   reactStrictMode: true,
@@ -17,8 +18,10 @@ const nextConfig = {
     trailingSlash: true,
     // publicado dentro de hexatenant.com.br/parceiros-do-aco, então todas as rotas e os assets
     // estáticos (_next/*) precisam nascer com esse prefixo
-    basePath: "/parceiros-do-aco",
+    basePath,
   }),
+  // com `images.unoptimized` o <Image> não prefixa o basePath no src; o componente da assinatura lê este valor
+  env: { NEXT_PUBLIC_BASE_PATH: basePath },
   // a exportação estática não tem o servidor de otimização de imagem do Next, que o <Image> usa por padrão
   images: { unoptimized: true },
 };

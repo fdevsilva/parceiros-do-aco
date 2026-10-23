@@ -19,7 +19,7 @@ export default function FooterSignature({ variant = "sidebar" }: FooterSignature
       >
         <span className="sidebar__footer-label">Produzido por</span>
         <Image
-          src="/hexatenant-logo.png"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/hexatenant-logo.png`}
           alt="Hexatenant"
           width={140}
           height={59}
