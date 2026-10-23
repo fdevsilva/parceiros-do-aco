@@ -1,0 +1,26 @@
+{
+  "name": "parceiros-do-aco",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Sistema de orcamentos para serralherias e estruturas metalicas. Projeto gratuito, sem backend, dados de exemplo. Produzido por Hexatenant.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "next": "^16.4.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.9",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^16.4.2",
+    "typescript": "5.5.2"
+  }
+}

@@ -1,0 +1,17 @@
+# dependências
+/node_modules
+
+# build do Next.js
+/.next/
+/out/
+
+# arquivos de tipo gerados automaticamente
+next-env.d.ts
+*.tsbuildinfo
+
+# variáveis de ambiente locais
+.env*.local
+
+# sistema operacional / editor
+.DS_Store
+*.pem
